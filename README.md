@@ -1,2 +1,3 @@
-# VANRYS_T_MARVELGRA
- class practice
+# Marvel Character Bio Bulid
+
+ All about Marvel's character lineup. Choose a character to explore!
