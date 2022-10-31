@@ -59,7 +59,13 @@ footer {
 
 .characters li h5 {
     padding: 14px 8px;
+  
+    color: rgb(254, 254, 254);
 
+}
+
+.characters li a {
+    text-decoration: none;
 }
 
 
@@ -94,7 +100,7 @@ article h3 {
 }
 
 article p {
-    width: 80px;
+    /* width: 80%; */
     font-size :18px;
     text-align: center;
     line-height: 1.2;
@@ -114,6 +120,69 @@ footer {
     background-color: rgb(31, 31, 31);
     height: 80px;
     
+}
+
+/* lightbox rules here */
+
+.lightbox {
+    
+    width: 100vw; /* vw=viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('/images/Cap_LB_Bg.png');
+    background-repeat: no-repeat;
+    background-size: 55vh;  /* 55% of the viewport height */
+    background-position: 40px bottom;
+    display: none;
+   
+}
+#Thor {
+    background-image: url('/images/Thor_LB_Bg.png');
+}
+#Captain_America {
+    background-image: url('/images/Cap_LB_Bg.png');
+}
+
+.lightbox_close {
+    position: relative;
+    top: 10px;
+    left: 95%;
+
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+
+
+.lightbox_close:hover {
+    opacity: 0.5; color: rgb(239, 250, 31);
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+
+
+.lb_text, .lb_heading {
+    text-align: left;
+}
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target {
+    display: block;
+
 }
 
 .sprite {
